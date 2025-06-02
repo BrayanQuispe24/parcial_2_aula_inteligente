@@ -43,7 +43,12 @@ INSTALLED_APPS = [
     'usuarios',
     'aulas',
     'niveles',
-    'materias'
+    'materias',
+    'temas',
+    'docentes',
+    'estudiantes',
+    'gestiones',
+    'asignacion_docentes'
 
 ]
 

@@ -8,7 +8,9 @@ class NivelSerializer(serializers.ModelSerializer):
     aula = serializers.PrimaryKeyRelatedField(
         queryset=Aula.objects.all())  # pylint: disable=no-member
     materias = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
+    estudiantes = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
 
     class Meta:
         model = Nivel
-        fields = ['id', 'codigo', 'descripcion', 'aula', 'materias']
+        fields = ['id', 'codigo', 'descripcion',
+                  'aula', 'materias', 'estudiantes']

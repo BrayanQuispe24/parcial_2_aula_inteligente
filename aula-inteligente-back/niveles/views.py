@@ -75,9 +75,7 @@ def actualizar_nivel(request):
                     status=status.HTTP_400_BAD_REQUEST)
 
 
-api_view(['DELETE'])
-
-
+@api_view(['DELETE'])
 def eliminar_nivel(request):
     """
     Elimina un nivel por su ID.

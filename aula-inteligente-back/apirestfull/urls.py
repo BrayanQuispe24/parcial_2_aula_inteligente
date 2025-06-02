@@ -22,5 +22,10 @@ urlpatterns = [
     path('api/usuario/', include('usuarios.urls')),
     path('api/aula/', include('aulas.urls')),
     path('api/niveles/', include('niveles.urls')),
-    path('api/materias/', include('materias.urls'))
+    path('api/materias/', include('materias.urls')),
+    path('api/temas/', include('temas.urls')),
+    path('api/docentes/', include('docentes.urls')),
+    path('api/estudiantes/', include('estudiantes.urls')),
+    path('api/gestiones/', include('gestiones.urls')),
+    path('api/asignacion_docentes/', include('asignacion_docentes.urls'))
 ]
