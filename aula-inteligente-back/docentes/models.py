@@ -1,5 +1,7 @@
 from django.db import models
 
+from usuarios.models import Usuario
+
 # Create your models here.
 
 
@@ -13,6 +15,8 @@ class Docente(models.Model):
     fecha_nacimiento = models.DateField()
     especialidad = models.CharField(max_length=255)
     fecha_contratacion = models.DateField()
+    usuario = models.OneToOneField(
+        Usuario, on_delete=models.CASCADE, related_name='docentes')
 
     class Meta:
         db_table = 'docente'

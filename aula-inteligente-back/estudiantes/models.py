@@ -1,6 +1,7 @@
 from django.db import models
 from gestiones.models import Gestion
 from niveles.models import Nivel
+from usuarios.models import Usuario
 
 # Create your models here.
 
@@ -22,6 +23,8 @@ class Estudiante(models.Model):
         Gestion, on_delete=models.CASCADE, related_name='estudiantes')
     nivel = models.ForeignKey(
         Nivel, on_delete=models.CASCADE, related_name='estudiantes')
+    usuario = models.OneToOneField(
+        Usuario, on_delete=models.CASCADE, related_name='estudiantes')
 
     class Meta:
         db_table = 'estudiante'
