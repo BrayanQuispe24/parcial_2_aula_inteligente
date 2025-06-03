@@ -6,5 +6,5 @@ urlpatterns = [
     path('crear/', crear_materia, name='crear_materia'),
     path('obtener/', obtener_materia, name='obtener_materia'),
     path('actualizar/', actualizar_materia, name='actualizar_materia'),
-    path('eliminar/', eliminar_materia, name='eliminar_nivel')
+    path('eliminar/<int:pk>/', eliminar_materia, name='eliminar_nivel')
 ]

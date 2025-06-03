@@ -27,5 +27,12 @@ urlpatterns = [
     path('api/docentes/', include('docentes.urls')),
     path('api/estudiantes/', include('estudiantes.urls')),
     path('api/gestiones/', include('gestiones.urls')),
-    path('api/asignacion_docentes/', include('asignacion_docentes.urls'))
+    path('api/asignacion_docentes/', include('asignacion_docentes.urls')),
+    path('api/trimestres/', include('trimestre.urls')),
+    path('api/asistencia/', include('asistencia.urls')),
+    path('api/participacion/', include('participacion.urls')),
+    path('api/tarea/', include('tarea.urls')),
+    path('api/evaluacion/', include('evaluacion.urls')),
+    path('api/auto_evaluacion/', include('auto_evaluacion.urls')),
+    path('api/boletin_materia/', include('boletin_materia.urls')),
 ]

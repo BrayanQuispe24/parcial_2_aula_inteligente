@@ -48,7 +48,14 @@ INSTALLED_APPS = [
     'docentes',
     'estudiantes',
     'gestiones',
-    'asignacion_docentes'
+    'asignacion_docentes',
+    'trimestre',
+    'asistencia',
+    'participacion',
+    'tarea',
+    'evaluacion',
+    'auto_evaluacion',
+    'boletin_materia',
 
 ]
 
